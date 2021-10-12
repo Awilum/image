@@ -154,7 +154,7 @@ class Encoder extends \Intervention\Image\AbstractEncoder
 	    }
 
 	    ob_start();
-        $resource = $this->image->getCore();
+            $resource = $this->image->getCore();
 	    imagepalettetotruecolor($resource);
 	    imagealphablending($resource, true);
 	    imagesavealpha($resource, true);
